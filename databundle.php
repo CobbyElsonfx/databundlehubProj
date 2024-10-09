@@ -8,7 +8,7 @@ $api = mysqli_fetch_assoc($secretApi);
 ?>
 <div>
     <div class="container">
-        <marquee behavior="scroll" direction="left" class="marquee">
+            <marquee behavior="scroll" direction="left" class="marquee">
             <h5 class="marquee-text"><span class="text-">IMPORTANT NOTICE :</span>
 
                 Our data request service does not support the following:
@@ -22,17 +22,41 @@ $api = mysqli_fetch_assoc($secretApi);
             </h5>
         </marquee>
         <div class="row">
+
             <!-- Image Column (hidden on small screens) -->
             <div class="col-lg-6 d-none d-lg-block">
                 <img src="./assets/images/africa.png" class="img-fluid" alt="Image">
             </div>
             <!-- Form Column -->
             <div class="col-lg-6">
-                <h2 class="">Affordable Internet Bundles</h2>
-                <h5 class="important-notice"> Pay to <span
-                        class="fs-2 fw-bold notice mx-1  p-1 rounded-sm text-white mx-1"> 0540182722 (Michael
-                        Cudjoe)</span> immediately after filling out the form. Use the Order ID you were provided when
+                <div> 
+    <h4 class="announcement-header">IMPORTANT NOTICE</h4>
+    <p class="important-notice">
+       <!--Dear valued customers, we are happy to inform you that we are starting work tommorrow 11th October. -->
+<!--Thank you-->
+
+<!--Good day, valued customers. Unfortunately, due to technical issues with our network, we have closed for the day (3rd August) to prevent further delays. Please be assured that all pending orders will be served. Thank you for your understanding-->
+
+<!--If you encounter any issues after placing an order, please report them to +233 0539821538 using the format below. Be aware that there may be delays of several hours for orders to be processed-->
+<!--<ul>-->
+<!--    <li>Order ID:XXXX</li>-->
+<!--<li>Beneficiary number: +230000000</li>-->
+<!--<li>Status on website: Delivered/Pending</li>-->
+<!--<li>Issue: </li>-->
+<!--<li>Date:</li>-->
+ <a href="https://chat.whatsapp.com/Ld4txUW3TO645vCh3wTPoI" target="_blank">Click here to join our whatsap group for regular updates about our services</a>
+
+<!--We are currently out of Stock, you may click on the link  <a href="https://docs.google.com/forms/d/e/1FAIpQLScQWip8yx1kd1-qtvL2EqgZj_zW5tg0i-sNHDPBA_2YcgWXKg/viewform?us=sf_link">Refund Form</a> to request for refund if you have pending orders. Kindly ensure to enter the correct details. -->
+
+ 
+</div>
+ <h5 class="important-notice"> Pay to<span
+                        class="fs-2 fw-bold notice mx-1  p-1 rounded-sm text-white mx-1"> 
+                        0201860015 (Micahel Cudjoe)  Andoh Francis (0539821538) </span> immediately after filling out the form. Use the Order ID you were provided when
+                                                <!--0201860015 (Micahel Cudjoe)  Andoh Francis (0558119187) </span> immediately after filling out the form. Use the Order ID you were provided when-->
+
                     you submitted the order as reference in your momo transaction</h5>
+                 
 
                 <form class="" action="" method="POST" name="form">
                     <div class="mb-2">
@@ -41,7 +65,7 @@ $api = mysqli_fetch_assoc($secretApi);
                             title="Input the name on the momo number used for payment" maxlength="30"
                             placeholder="Clement Asiedu" id="momo_name" name="momo_name"
                             class="form-control custom-input" pattern="[a-zA-Z\s]+" title="Please enter only alphabets"
-                            required>
+                            required >
                     </div>
 
                     <!-- Hidden input field for reference -->
@@ -51,20 +75,22 @@ $api = mysqli_fetch_assoc($secretApi);
                     </div>
                     <!-- Hidden input field for megabytes -->
                     <input type="hidden" id="megabytes" name="megabytes">
+                    <!--Received-->
+                     <input type="hidden" id="received" value="Received" name="received">
 
                     <div class="mb-2">
                         <label for="momo_number" class="form-label">Beneficiary Number:</label>
                         <input type="text" maxlength="10" placeholder="eg.0254 000 000" id="momo_number"
                             name="momo_number" class="form-control custom-input"
-                            pattern="^(054|055|059|053|024|025)\d{7}$"
-                            title="We do not serve data to this network provider, contact network operator" required>
+                            pattern="^(054|055|059|053|024|025|026)\d{7}$"
+                            title="We do not serve data to this network provider, contact network operator" required >
                     </div>
 
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <div class="mb-2">
                                 <label for="package" class="form-label ">Choose Package:</label>
-                                <select id="package" name="package" class="form-select form-control custom-input"
+                                <select id="package" name="package" class="form-select form-control custom-input" placeholder=".....GB"
                                     required>
                                     <option value="">Select Package</option>
                                     <!-- Dynamically generate options using JavaScript -->
@@ -89,7 +115,7 @@ $api = mysqli_fetch_assoc($secretApi);
                         </div>
                     </div>
 
-                    <button type="submit" class="custom-button mt-4 rounded-3">Submit</button>
+                    <button type="submit" class="custom-button mt-4 rounded-3 " >Submit</button>
                 </form>
             </div>
         </div>
@@ -121,7 +147,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">1</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 4.5</div>
+                                                        <div class="amount">GHC 5.5</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -135,7 +161,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">2</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 8</div>
+                                                        <div class="amount">GHC 10.5</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -149,7 +175,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">3</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 12</div>
+                                                        <div class="amount">GHC 16</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -164,7 +190,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">4</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 16</div>
+                                                        <div class="amount">GHC 20</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -183,7 +209,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">5</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 20</div>
+                                                        <div class="amount">GHC 24</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -197,7 +223,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">6</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 24</div>
+                                                        <div class="amount">GHC 28</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -211,7 +237,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">7</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 27</div>
+                                                        <div class="amount">GHC 33</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -226,7 +252,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">8</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 30</div>
+                                                        <div class="amount">GHC 37</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -244,7 +270,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">9</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 33</div>
+                                                        <div class="amount">GHC 41</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -259,7 +285,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">10</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 35</div>
+                                                        <div class="amount">GHC 44</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -274,7 +300,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">12</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 40</div>
+                                                        <div class="amount">GHC 54</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -289,7 +315,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">13</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 43</div>
+                                                        <div class="amount">GHC 56</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -305,24 +331,9 @@ $api = mysqli_fetch_assoc($secretApi);
                                             <div class="thumb-wrapper">
                                                 <div class="thumb-content">
                                                     <div class="gigcard">
-                                                        <div class="package-size"><span class="size">14</span><span
-                                                                class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 47</div>
-                                                    </div>
-                                                    <div>
-                                                        <a href="#" class="btn btn-primary">Buy Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="thumb-wrapper">
-
-                                                <div class="thumb-content">
-                                                    <div class="gigcard">
                                                         <div class="package-size"><span class="size">15</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 50</div>
+                                                        <div class="amount">GHC 64</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -337,7 +348,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">16</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 54</div>
+                                                        <div class="amount">GHC 68</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -352,7 +363,22 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">18</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 60</div>
+                                                        <div class="amount">GHC 76</div>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="thumb-wrapper">
+
+                                                <div class="thumb-content">
+                                                    <div class="gigcard">
+                                                        <div class="package-size"><span class="size">20</span><span
+                                                                class="subscript">gig</span></div>
+                                                        <div class="amount">GHC 84</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -368,24 +394,9 @@ $api = mysqli_fetch_assoc($secretApi);
                                             <div class="thumb-wrapper">
                                                 <div class="thumb-content">
                                                     <div class="gigcard">
-                                                        <div class="package-size"><span class="size">20</span><span
-                                                                class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 67</div>
-                                                    </div>
-                                                    <div>
-                                                        <a href="#" class="btn btn-primary">Buy Now</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="thumb-wrapper">
-
-                                                <div class="thumb-content">
-                                                    <div class="gigcard">
                                                         <div class="package-size"><span class="size">25</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 83</div>
+                                                        <div class="amount">GHC 108</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -398,9 +409,24 @@ $api = mysqli_fetch_assoc($secretApi);
 
                                                 <div class="thumb-content">
                                                     <div class="gigcard">
-                                                        <div class="package-size"><span class="size">75</span><span
+                                                        <div class="package-size"><span class="size">30</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 234</div>
+                                                        <div class="amount">GHC 127</div>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="thumb-wrapper">
+
+                                                <div class="thumb-content">
+                                                    <div class="gigcard">
+                                                        <div class="package-size"><span class="size">50</span><span
+                                                                class="subscript">gig</span></div>
+                                                        <div class="amount">GHC 205</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -414,7 +440,7 @@ $api = mysqli_fetch_assoc($secretApi);
                                                     <div class="gigcard">
                                                         <div class="package-size"><span class="size">100</span><span
                                                                 class="subscript">gig</span></div>
-                                                        <div class="amount">GHC 310</div>
+                                                        <div class="amount">GHC 405</div>
                                                     </div>
                                                     <div>
                                                         <a href="#" class="btn btn-primary">Buy Now</a>
@@ -451,7 +477,7 @@ $api = mysqli_fetch_assoc($secretApi);
     ?>
 
     <!-- form submission -->
-    <script>
+<script>
     const scriptURL = '<?= $api['url'] ?>';
     const form = document.forms['form'];
 
@@ -467,8 +493,26 @@ $api = mysqli_fetch_assoc($secretApi);
         return reference;
     }
 
+    function copyToClipboard(text) {
+        const tempInput = document.createElement('textarea');
+        tempInput.style.position = 'absolute';
+        tempInput.style.left = '-9999px';
+        tempInput.value = text;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        try {
+            document.execCommand('copy');
+            console.log('Copied to clipboard:', text);
+        } catch (err) {
+            console.error('Failed to copy to clipboard:', err);
+        }
+        document.body.removeChild(tempInput);
+    }
+
     form.addEventListener('submit', e => {
         e.preventDefault();
+        console.log("Form submit event triggered");
+
         const submitButton = form.querySelector('button[type="submit"]');
         submitButton.disabled = true;
         submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...';
@@ -478,27 +522,30 @@ $api = mysqli_fetch_assoc($secretApi);
         document.getElementById('reference').value = reference;
 
         const formData = new FormData(form);
+        console.log("Form data prepared for submission");
 
         fetch(scriptURL, {
             method: 'POST',
             body: formData
         })
         .then(response => {
+            console.log("Response received:", response);
             submitButton.disabled = false;
             submitButton.innerHTML = 'Submit';
+
             if (response.ok) {
-                // Prompt user to copy the reference
-                const copyText = document.createElement('textarea');
-                copyText.value = reference;
-                document.body.appendChild(copyText);
-                copyText.select();
-                document.execCommand('copy');
-                document.body.removeChild(copyText);
+                console.log("Response OK");
+                // Copy reference to clipboard manually
+                copyToClipboard(reference);
+
+                // Play the beep sound
                 playBeep();
-                alert("Thank you! Your order has been successfully submitted. Your Order ID is:   " + reference + " .Complete the payment within 5 minutes to avoid expiration");
-                playBeep();
+
+                // Display an alert
+                alert("Thank you! Your order has been successfully submitted. Your Order ID is: " + reference + ". Complete the payment within 5 minutes.");
+
                 form.reset();
-                document.getElementById('package_mb').value = ''; // Clear the package_mb field
+                document.getElementById('package_mb').value = '';
             } else {
                 throw new Error('Network response was not ok');
             }
@@ -512,10 +559,12 @@ $api = mysqli_fetch_assoc($secretApi);
     });
 
     function playBeep() {
-        const beep = new Audio('assets/sound/beep-09.wav');
+        const beep = new Audio(beepSoundUrl);
         beep.play();
     }
 </script>
+
+
 
 
 
@@ -528,7 +577,7 @@ $api = mysqli_fetch_assoc($secretApi);
                     this.value = this.value.slice(0, 10); // Limit input to 10 characters
                 }
 
-                if (this.value.length > 0 && this.value[0] !== '0') {
+                if (this.value.length > 0 && this.value[0] !== '0'){
                     this.value = '0' + this.value;
                 }
             });
@@ -537,30 +586,32 @@ $api = mysqli_fetch_assoc($secretApi);
 
 
     <script>
-        const bundlePackages = {
-            '1GB': 4.5,
-            '2GB': 8,
-            '3GB': 12,
-            '4GB': 16,
-            '5GB': 20,
-            '6GB': 24,
-            '7GB': 27,
-            '8GB': 30,
-            '9GB': 33,
-            '10GB': 35,
-            '12GB': 40,
-            '13GB': 43,
-            '14GB': 47,
-            '15GB': 50,
-            '16GB': 54,
-            '18GB': 60,
-            '20GB': 67,
-            '25GB': 83,
-            '31GB': 100,
-            '50GB': 155,
-            '75GB': 234,
-            '100GB': 310
-        };
+    
+const bundlePackages = {
+    '1GB': 5.5,
+    '2GB': 10.5,
+    '3GB': 15,
+    '4GB': 20,
+    '5GB': 24,
+    '6GB': 28,
+    '7GB': 33,
+    '8GB': 37,
+    '9GB': 41,
+    '10GB': 44,
+    '12GB': 52,
+    '13GB': 56,
+    '14GB': 60,
+    '15GB': 64,
+    '16GB': 68,
+    '18GB': 76,
+    '20GB': 84,
+    '25GB': 108,
+    '30GB': 127,
+    '50GB': 205,
+    // '75GB': 295,
+     '100GB': 405
+};
+
 
         document.addEventListener('DOMContentLoaded', function () {
             const packageSelect = document.getElementById('package');

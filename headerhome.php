@@ -38,6 +38,8 @@ if ($page == 'login.php') {
     <meta name="description"
         content="Get affordable data bundles from dataBundleshub, your trusted data seller in Ghana. We offer a range of mobile data plans to suit your needs.">
     <meta name="author" content="dataBundleshub">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1983131452016590"
+     crossorigin="anonymous"></script>
 
 
 
@@ -69,25 +71,34 @@ if ($page == 'login.php') {
 
     <div id="wrapper">
         <header class="tech-header header ">
-            <div class="container-fluid">
+        <div class="container-fluid">
                 <nav class="navbar navbar-toggleable-md navbar-inverse py-3 mt-4 mx-3 fixed-top bg-inverse">
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand desktop-logo mobile-logo bouncing" href="index.php"><img
-                            src="uploads/<?= $siteData['logo'] ?>" alt=""></a>
+                    <a class="navbar-brand" href="index.php"><img src="uploads/<?= $siteData['logo'] ?>" alt=""></a>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.php">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="databundle.php">Data Bundle </a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Data Bundle
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="databundle.php">Buy Data Bundle</a>
+                                    <a class="dropdown-item" href="order-status.php">Check Order Status</a>
+                                    <a class="dropdown-item disabled" href="#">Register as Agent</a>
+
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Super Agent Reg. </a>
+
+                            <li class="nav-item ">
+                                <a class="nav-link " href="news.php">News</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.php">About Us </a>
@@ -117,11 +128,11 @@ if ($page == 'login.php') {
                             <p>Get the best data bundle plan for your internet needs</p>
                             <div class="text-white">
                                 <a class="link-bundle px-2" href="databundle.php">
-                                    Buy Now
+                                    Buy Now as 
 
                                 </a>
-                                <a class="link-agent px-2" href="#">
-                                    Reg. as Agent
+                                <a class="link-agent px-2" href="login.php">
+                                     Agent Panel
                                 </a>
                             </div>
                         </div>
